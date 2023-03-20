@@ -54,9 +54,14 @@ background: linear-gradient(135deg, rgba(127,17,251,1) 35%, rgba(49,125,215,1) 6
 
 .select{
   outline: 0;
-  border: 2px solid blue;
+  border: 0;
+  border-bottom: 2px solid blue;
   padding: .5rem;
-  border-radius: 5px;
+  padding-left: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  color: grey;
+  margin-top: -1rem;
 }
 
 .login_btn{

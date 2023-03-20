@@ -1,0 +1,36 @@
+.bug_container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242f92;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.bug_container h4{
+    color: white;
+    padding-bottom: .75rem;
+}
+
+.ques_container,.ans_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ques_container h4{
+    color: blueviolet;
+}
+
+.edit_btn{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: #242f92;
+    color: white;
+    border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+.bug_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #75ba75;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.bug_container h4{
+    color: white;
+    padding-bottom: .75rem;
+}
+
+.ques_container,.ans_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ques_container h4{
+    color: #17191b;
+}

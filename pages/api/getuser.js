@@ -6,17 +6,12 @@ connect()
 
 export default async function handler(req, res) {
   try {
-     const {email,password,role} = req.body;
-     const user = await User.findOne({email,password,role});
+     const {email} = req.body;
+     const user = await User.findOne({email});
      if(!user){
         res.status(400).json({"msg":"INVALID CREDENTIALS"})
      }
-     if(role==="tester"){
-         res.redirect('/tester')
-     }
-     else{
-        res.redirect("/developer")
-     }
+     res.json(user)
   } catch (error) {
     res.status(500).json(error)
   }
