@@ -6,7 +6,7 @@ function TesterMain({user}) {
   const [bugs,setbugs]=useState([])
   useEffect(()=>{
     const getbugs = async () => {
-      const res = await fetch("/api/getbugs")
+      const res = await fetch("https://bugtracker-kappa.vercel.app/api/getbugs")
       const data = await res.json()
       setbugs(data)
     }

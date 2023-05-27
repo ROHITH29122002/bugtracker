@@ -7,7 +7,7 @@ function DevMain({user}) {
   useEffect(()=>{
     const getbugs = async () => {
       const param = localStorage.getItem("email")
-      const res = await fetch("/api/getdevbugs",{
+      const res = await fetch("https://bugtracker-kappa.vercel.app/api/getdevbugs",{
         method:"POST",
         headers: {
           "Content-Type": "application/json",
