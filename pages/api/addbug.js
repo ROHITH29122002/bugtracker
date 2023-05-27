@@ -10,7 +10,7 @@ export default async function handler(req, res) {
      if(!user){
       return res.staus(500).json({"msg":"ERROR"});
      }
-     res.redirect('/tester')
+     res.redirect('https://bugtracker-kappa.vercel.app/tester')
   } catch (error) {
     res.status(500).json(error)
   }
