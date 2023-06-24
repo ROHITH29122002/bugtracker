@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Bug from "./Bug"
-import styles from "../styles/testermain.module.css"
+import styles from "../public/styles/testermain.module.css"
 
 function TesterMain({user}) {
   const [bugs,setbugs]=useState([])

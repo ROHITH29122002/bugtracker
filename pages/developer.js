@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Image from "next/image"
-import styles from "../styles/developer.module.css"
+import styles from "../public/styles/developer.module.css"
 import DevMain from '../Components/DevMain';
 
 

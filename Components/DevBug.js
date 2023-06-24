@@ -1,4 +1,4 @@
-import styles from "../styles/devbug.module.css"
+import styles from "../public/styles/devbug.module.css"
 
 function DevBug({bug}) {
 

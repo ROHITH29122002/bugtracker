@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import DevBug from "./DevBug"
-import styles from "../styles/devmain.module.css"
+import styles from "../public/styles/devmain.module.css"
 
 function DevMain({user}) {
   const [bugs,setbugs]=useState([])

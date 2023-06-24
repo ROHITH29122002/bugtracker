@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import styles from "../styles/bug.module.css"
+import styles from "../public/styles/bug.module.css"
 
 function Bug({bug}) {
   return (

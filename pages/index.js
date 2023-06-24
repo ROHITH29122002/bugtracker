@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import user from "../public/user.png"
-import styles from '../styles/Home.module.css'
+import styles from '../public/styles/Home.module.css'
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Image from "next/image"
 import TesterMain from '../Components/TesterMain';
-import styles from "../styles/tester.module.css"
+import styles from "../public/styles/tester.module.css"
 import Link from 'next/link';
 
 

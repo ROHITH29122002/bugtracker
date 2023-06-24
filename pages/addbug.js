@@ -1,4 +1,4 @@
-import styles from "../styles/addbug.module.css"
+import styles from "../public/styles/addbug.module.css"
 
 function addbug() {
   return (
