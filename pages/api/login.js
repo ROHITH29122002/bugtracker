@@ -12,10 +12,10 @@ export default async function handler(req, res) {
         res.status(400).json({"msg":"INVALID CREDENTIALS"})
      }
      if(role==="tester"){
-         res.redirect('https://bugtracker-kappa.vercel.app/tester')
+         res.redirect("/tester")
      }
      else{
-        res.redirect("https://bugtracker-kappa.vercel.app/developer")
+        res.redirect("/developer")
      }
   } catch (error) {
     res.status(500).json(error)

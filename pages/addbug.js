@@ -4,7 +4,7 @@ function addbug() {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.heading}>ADD BUG PAGE : </h1>
-      <form className={styles.form_container} action="https://bugtracker-kappa.vercel.app/api/addbug" method="POST">
+      <form className={styles.form_container} action="/api/addbug" method="POST">
         <input className={styles.input} type="text" name="name" placeholder='Enter The Bug Name'/>
         <textarea type="text" className={styles.input} name='desc' placeholder='Enter Bug Description'></textarea>
         <select className={styles.select} name="severity">

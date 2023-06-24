@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/editbug.module.css"
+import styles from "../public/styles/editbug.module.css"
 
 function editbug() {
   const [activebug,setactivebug]=useState({})
   useEffect(()=>{
     const getbug = async () => {
       const name = localStorage.getItem("bug")
-      const res = await fetch("https://bugtracker-kappa.vercel.app/api/getbug",{
+      const res = await fetch("/api/getbug",{
         method:"POST",
         headers: {
           "Content-Type": "application/json",
@@ -19,7 +19,7 @@ function editbug() {
     getbug()
   },[])
   const handleinput = async () => {
-    const res = await fetch("https://bugtracker-kappa.vercel.app/api/editbug",{
+    const res = await fetch("/api/editbug",{
       method:"POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function editbug() {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.heading}>EDIT BUG PAGE : </h1>
-      <form className={styles.form_container} action="https://bugtracker-kappa.vercel.app/api/editbug" method="POST">
+      <form className={styles.form_container} action="/api/editbug" method="POST">
         <input className={styles.input} name="name" value={activebug.name}/>
         <textarea className={styles.input} onChange={(e)=>{
           setactivebug({...activebug , desc : e.target.value})
